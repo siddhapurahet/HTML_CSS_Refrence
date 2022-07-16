@@ -1,0 +1,143 @@
+/*in CSS for styling using 
+    id --> #idnmame
+    class --> .classnmae
+    header --> h1,h2 
+
+If class, id and hesder having same styling then the
+-> inline css -> it will override other method.
+for css in other file.
+-> 1st priority -> id (it will override class and header)
+-> 2nd priority -> class (it will override header)
+-> 3rd priority -> header.*/
+
+ 
+
+
+body {
+    /*background: grey;  /* background: url("type url")*/
+    background: linear-gradient(to bottom, pink, lightyellow);
+}                         
+h1:hover {          /*it will change to pink when mouse is placed on it*/                      
+    color: pink;
+}
+
+h2 {
+    font-weight: 800;  /*for boldness varies from 100 to 800*/
+}
+
+ul:first { 
+    color: green; 
+} 
+
+a:link {    /*in anchor tag the color   will  be darkblue*/
+    color: darkblue;
+}
+
+a:visited {  /*if link is already click then it will show red color otherwise darkblue*/
+    color: blue;
+}
+
+h3 + p {
+    color: green;
+}
+
+/* img[src*="../images/"] {
+    border: 10px black;
+} */
+img {
+    border: 3px solid black;
+    height: 100px;
+    width: 150px;
+}
+
+.box1 {
+    height: 100px;
+    width: 150px;
+    background: linear-gradient(to top right, red, green);
+    padding: 2cm;   
+    padding: 20px 10px 40px 5px;
+    border: 10px solid black; 
+}
+
+.box2 {
+    height: 100px;
+    width: 150px; 
+    padding: 20px 10px 40px 5px;
+    background: radial-gradient(circle, green 40%, blue 50%, red 10%);
+}
+
+.unorder {
+    font-size: 0.5cm;
+    text-decoration: underline;
+} 
+
+h2 {
+    text-transform: uppercase;  /*makes the font capital*/
+}
+
+.lorem {
+    text-align: justify;
+    font-family: sans-serif;
+    
+}    
+
+img {
+    padding: 0.2cm; /*or padding: 4px 5px 6px 7px  -> top right bottom left*/
+    margin: 0cm;
+}
+ 
+.container {
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    width: 250px;
+}
+
+.citem {
+ width: 100px;
+ background-color:yellow;
+ text-align: center;
+ /* line-height: 50px; */ 
+ font-size: 25px;
+ margin: 10px;
+ text-decoration: dotted;
+ font-size: 30px;
+ border:2px solid black;
+ 
+}
+
+.fieldgrid {
+    animation-name: fade-in;
+    animation-duration: 5s;
+    background:linear-gradient(to bottom, pink, lightyellow, lightgreen);
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 2px;
+    
+}
+
+.option {
+    border: 20px solid black;
+}
+
+#message {
+    animation-name: feDropShadow;
+    animation-duration: 5s;
+}
+
+@keyframes feDropShadow {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-in {
+    from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+}
